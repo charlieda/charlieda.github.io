@@ -32,6 +32,10 @@ h1 {
   color:#F92672;
   border-bottom: solid 1px #F92672;
 }
+h2 {
+  color: #A6E22E ;
+  border-bottom: solid 1px #A6E22E;
+}
 
 /* Main Layout Styles */
 #column {
@@ -45,7 +49,7 @@ h1 {
 }
 #main {
   margin-left: 300px;
-  padding-top: 1px;
+  padding-top: 23px;
   width: 968px;
 }
 
