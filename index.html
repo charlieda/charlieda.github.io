@@ -2,6 +2,8 @@
   <head>
     <title>Charlie Anderson - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="function.js"></script>
   </head>
   <body>
 
@@ -19,9 +21,13 @@
           <li>Project: example</li>
           <li>Project: example</li>
           <li>Project: example</li>
-          <li>Contact</li>
         </ol>
       </nav>
+
+      <section>
+        <h2>Contact</h2>
+        <p>I can be contacted via email at <a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></p>
+      </section>
     </aside>
 
     <section id="main">
@@ -66,6 +72,18 @@
             <span class="project-info-item"><strong>Date:</strong> Autumn 2012</span>
             <span class="project-info-item"><strong>Language:</strong> C</span>
           </div>
+          <p>This project required me to implement a C library for dealing with sparse matricies: large matricies with most of the cells having value 0. It required some thought to the layout of the data types and functions, and part of the assignment involved writing a series of test cases.</p>
+
+          <div>
+            <h3>sparse.h</h3>
+            <span class="code-toggle" data-action="toggle" data-item="#code-sparseh">Show/Hide Code</span>
+            <div class="collapse" id="code-sparseh"><script src="https://gist.github.com/charlieda/8321218.js"></script></div>
+          </div>
+          <div>
+            <h3>sparse.c</h3>
+            <span class="code-toggle" data-action="toggle" data-item="#code-sparsec">Show/Hide Code</span>
+            <div class="collapse" id="code-sparsec"><script src="https://gist.github.com/charlieda/8321314.js"></script></div>
+          </div>
         <h2>Databases: SQL Queries</h2>
           <div class="project-info">
             <span class="project-info-item"><strong>Date:</strong> Autumn 2012</span>
@@ -75,11 +93,6 @@
       <article>
         <h1>Other Interests</h1>
         <p>In my spare time, I enjoy the dark side of theatre - lighting, sound and stage management. I have been actively involved in student drama at the University of Bristol since I joined, and have held the roles of both Vice President and President of the Stage Technicians' Association. 
-      </article>
-
-      <article>
-        <h1>Contact</h1>
-        <p>I can be contacted via email at <a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></p>
       </article>
 
     </section>

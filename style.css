@@ -35,6 +35,10 @@ h1 {
 h2 {
   color: #A6E22E ;
   border-bottom: solid 1px #A6E22E;
+  margin-bottom: 5px;
+}
+h3 {
+  margin: 5px;
 }
 
 /* Main Layout Styles */
@@ -86,6 +90,21 @@ article h1 {
 }
 .project-info-item {
   margin-right: 20px;
+}
+
+.code-toggle {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 1px;
+  clear:both;
+}
+article h3 {
+  display: inline-block;
+}
+
+/* misc */
+.gist table {
+  color: #000 !important;
 }
 
 
