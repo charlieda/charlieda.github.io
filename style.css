@@ -41,6 +41,10 @@ h3 {
   margin: 5px;
 }
 
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
 /* Main Layout Styles */
 #column {
   position: fixed;
@@ -52,9 +56,10 @@ h3 {
   border-right: solid 1px #FFFFFF;
 }
 #main {
-  margin-left: 300px;
+  margin: 0 25px 0 300px;
   padding-top: 23px;
-  width: 968px;
+  max-width: 968px;
+  min-width: 500px;
 }
 
 /* Header */
