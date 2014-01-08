@@ -1,0 +1,89 @@
+/* Colour Scheme - Monokia
+
+#272822       Black
+#F92672       Pink
+#66D9EF       Blue
+#A6E22E       Green
+#FD971F       Orange
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+/* general */
+body {
+  color: #FFFFFF;
+  background: #272822;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+p {
+
+}
+
+a:link {
+  color: #66D9EF;
+}
+
+h1 {
+  color:#F92672;
+  border-bottom: solid 1px #F92672;
+}
+
+/* Main Layout Styles */
+#column {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  float: left;
+  padding: 10px;
+  border-right: solid 1px #FFFFFF;
+}
+#main {
+  margin-left: 300px;
+  padding-top: 1px;
+  width: 968px;
+}
+
+/* Header */
+#header-logo {
+  border-radius: 38px;
+  margin: 5px 10px 0 0;
+  float:left;
+}
+header h1 {
+  font-size: 30px;
+  margin-top:0;
+}
+/* Nav */
+
+/* section - main */
+
+
+/* article */
+article {
+  clear:both;
+}
+
+article h1 {
+  font-size: 45px;
+  margin: 5px 0px 5px 0px;
+}
+
+.lead-image {
+  float:left;
+  margin: 10px 10px 10px 0;
+
+  border-radius: 15px;
+}
+.project-info-item {
+  margin-right: 20px;
+}
+
+
+
+
