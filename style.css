@@ -24,8 +24,11 @@ p {
 
 }
 
-a:link {
+a:link, a:visited {
   color: #66D9EF;
+}
+a:active {
+  color: #FD971F;
 }
 
 h1 {
@@ -38,11 +41,23 @@ h2 {
   margin-bottom: 5px;
 }
 h3 {
-  margin: 5px;
+  margin: 5px 0 5px 10px;
 }
 
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+ol {
+  padding-left: 25px;
+}
+
+ol ol {
+  padding-left: 20px;
+}
+
+li li {
+  font-size: smaller;
 }
 
 /* Main Layout Styles */
@@ -53,11 +68,10 @@ code {
   width: 250px;
   float: left;
   padding: 10px;
-  border-right: solid 1px #FFFFFF;
 }
 #main {
   margin: 0 25px 0 300px;
-  padding-top: 23px;
+  padding-top: 15px;
   max-width: 968px;
   min-width: 500px;
 }
@@ -71,6 +85,7 @@ code {
 header h1 {
   font-size: 30px;
   margin-top:0;
+  line-height: 115%;
 }
 /* Nav */
 
