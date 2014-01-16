@@ -18,7 +18,7 @@
         <ol>
           <li><a href="#article-about">About Me</a></li>
           <li><a href="#article-ubutheatre">Website Development</a></li>
-          <li><a href="#article-nats">Summer Intenship at NATS</a></li>
+          <li><a href="#article-nats">Summer Internship at NATS</a></li>
           <li><a href="#article-uni">Software Development at University</a>
             <ol>
               <li>Image Processing: Gesture Recognition</li>
@@ -43,9 +43,8 @@
         <div class="project-info">
           <span class="project-info-item"><strong>Name:</strong> Charlie Anderson</span>
           <span class="project-info-item"><strong>Email:</strong> <a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></span>
-          <span class="project-info-item"><strong>Current Occupation:</strong> Student at the University of Bristol</span>
         </div>
-        <p>I am a computer science student, studying for a Masters of Engineering at the University of Bristol. I am a hardworking, concientious individual, keen on all aspects of computer science, both practical and theoretical. My excellent teamworking skills have been built both through working on software projects and through my work in theatre and entertainment.</p>
+        <p>I am a computer science student, studying for a Masters of Engineering at the University of Bristol. I am a hardworking, conscientious individual, keen on all aspects of computer science, both practical and theoretical. My excellent team working skills have been built both through working on software projects and through my work in theatre and entertainment.</p>
         <p>In 2013, I won the "Top 10 Second Year Computer Scientist" award. I have been achieving a first class mark throughout my time at the University.</p>
       </article>
 
@@ -57,10 +56,8 @@
           <span class="project-info-item"><strong>Language:</strong> PHP</span>
         </div>
         <img src="ubutheatre.png" class="lead-image" />
-        <p>This is perhaps my most public example of software development. The website is a custom-written PHP application, which processes ticket bookings for theatrical performances at the University of Bristol Students' Union. My involment began after the site was a few years old, and involved re-working a lot of the codebase to conform to more modern standards of security, object orientation and database normalisation. I introduced source control to the project, along with issue tracking and a system for managing support requests.</p>
-        <p>I am also responsible for the visual design (pictured). The live site can be found <a href="http://www.ubutheatre.com">here</a>, although it is still no where near the stage where it could be called complete.</p>
-        <p>I have included several samples of code below, showcasing the wide variety of improvements made.<p>
-        
+        <p>This is perhaps my most public example of software development. The website is a custom-written PHP application, which processes ticket bookings for theatrical performances at the University of Bristol Students' Union. My involvement began after the site was a few years old, and involved re-working a lot of the code base to conform to more modern standards of security, object orientation and database normalisation. I introduced source control to the project, along with issue tracking and a system for managing support requests.</p>
+        <p>I am also responsible for the visual design (pictured). The live site can be found <a href="http://www.ubutheatre.com">here</a>, although it is still no where near the stage where it could be called complete.</p>        
       </article>
 
       <article>
@@ -69,6 +66,7 @@
           <span class="project-info-item"><strong>Date:</strong> Summer 2012</span>
           <span class="project-info-item"><strong>Role:</strong> Summer Placement Student</span>
           <span class="project-info-item"><strong>Language:</strong> C++</span>
+          <p>In the summer of 2012, I completed a 3 month internship at National Air Traffic Services, the company that provides air traffic control to the majority of the UK. My task was to specify, design and build a component of their simulation software. This component simulated the operational communications system in use between controllers, and was built using the Qt toolkit and written in C++.</p>
         </div>
 
       <article>
@@ -79,7 +77,7 @@
             <span class="project-info-item"><strong>Date:</strong> Autumn 2013</span>
             <span class="project-info-item"><strong>Language:</strong> C++</span>
           </div>
-          <p>Working in a group of 3, we produced an implementation of the Lucas and Kanade algorithm to estimate the motion field over a set of frames. Using the output from this, we made a decision as to wether the motion was predomenantly left or right, and outputed this to the display window. We used the OpenCV library.</p>
+          <p>Working in a group of 3, we produced an implementation of the Lucas and Kanade algorithm to estimate the motion field over a set of frames. Using the output from this, we made a decision as to whether the motion was predominantly left or right, and outputted this to the display window. We used the OpenCV image processing  library.</p>
 
           <div>
             <h3>video.cpp</h3>
@@ -92,7 +90,7 @@
             <span class="project-info-item"><strong>Date:</strong> Autumn 2013</span>
             <span class="project-info-item"><strong>Language:</strong> Java</span>
           </div>
-          <p>This was a pair project, where we had to implement a spam filter using the Naive Bayes method. We split the program into 3 classes: the main <code>filter</code> program which was given a filename and had to output <code>spam</code> or <code>ham</code>; the <code>NaiveBayesClassifier</code> class, which did the actual classificaiton, and the <code>TrainClassifier</code> class, which produced and saved a trained version of the <code>NaiveBayesClassifier</code>.
+          <p>This was a pair project, where we had to implement a spam filter using the Naive Bayes method. We split the program into 3 classes: the main <code>filter</code> program which was given a filename and had to output <code>spam</code> or <code>ham</code>; the <code>NaiveBayesClassifier</code> class, which did the actual classification, and the <code>TrainClassifier</code> class, which produced and saved a trained version of the <code>NaiveBayesClassifier</code>.
 
           <div>
             <h3>filter.java</h3>
@@ -114,7 +112,7 @@
             <span class="project-info-item"><strong>Date:</strong> Autumn 2012</span>
             <span class="project-info-item"><strong>Language:</strong> C</span>
           </div>
-          <p>This project required me to implement a C library for dealing with sparse matricies: large matricies with most of the cells having value 0. It required some thought to the layout of the data types and functions, and part of the assignment involved writing a series of test cases.</p>
+          <p>This project required me to implement a C library for dealing with sparse matrices: large matrices with most of the cells having value 0. It required some thought to the layout of the data types and functions, and part of the assignment involved writing a series of test cases.</p>
 
           <div>
             <h3>sparse.h</h3>
@@ -133,6 +131,7 @@
           </div>
           <p></p>
           <div>
+            <p>The databases course required us to develop a complicated set of queries to produce reports from an Oracle database. The code example below is from the second coursework, and involved querying the film database, containing tables for <code>actors</code>, <code>movies</code> and <code>casting</code>. The <code>casting</code> table solved the many to many relationship between movies and actors. In a separate coursework, the unit required us to design the scheme for a game achievements system.</p>
             <h3>film.sql</h3>
             <span class="code-toggle" data-action="toggle" data-item="#code-filmsql">Show/Hide Code</span>
             <div class="collapse" id="code-filmsql"><script src="https://gist.github.com/charlieda/8322363.js"></script></div>
