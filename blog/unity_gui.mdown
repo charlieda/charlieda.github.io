@@ -1,0 +1,41 @@
+# Coding GUIs in Unity
+
+While there are [several][1] [question][2] [topics][3] dealing with how to program GUIs in Unity, 
+none of them really answer the question I wanted to know: How to lay out the actual code. After
+my first project in Unity, here are the thoughts I have on how to build a non-trivial GUI in Unity
+
+## Handling Button Clicks
+
+Most of the Unity documentation offers up this paradigm
+
+``` C#
+if( GUI.Button( pos, "Button" )) {
+  	// handle button code here
+}
+```
+
+This is bad for two reasons
+
+1. Encourages merging presentation and logic code
+2. Quickly gets unweildly for even a few buttons
+
+Instead, create a series of button handler functions
+
+``` C#
+// within OnGUI method
+if( GUI.button( pos, "Button 1" )) { Button1_OnClick(); } 
+
+// later in class
+private void Button1_OnClick() {
+	// handle button 1 click here
+}
+```
+
+*Yes, you should [always][4] use curly braces, even for a one line statement*
+
+
+
+[1]: http://answers.unity3d.com/questions/17289/whats-the-right-way-to-code-a-gui.html
+[2]: http://forum.unity3d.com/threads/49489-Are-There-Any-Best-Practices-for-Unity-GUI-Coding
+[3]: http://answers.unity3d.com/questions/217415/game-ui-design-suggestion.html
+[4]: TODO: get link for this
