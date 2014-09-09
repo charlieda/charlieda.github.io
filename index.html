@@ -1,55 +1,64 @@
 <html>
   <head>
     <title>Charlie Anderson - Portfolio</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="function.js"></script>
   </head>
   <body>
 
-    <aside id="column">
-      <header>
-        <img id="header-logo" src="headshot.jpg" />
-        <h1>Charlie Anderson</h1>
-        <h2>Portfolio</h2>
-      </header>
+    <header>
+      <img id="header-logo" src="headshot.jpg" /> 
+      <h1>Charlie Anderson</h1>
+      <ul id="header-summary" class="fa-ul">
+        <li><i class="fa-li fa fa-envelope"></i><a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></li>
+        <li><i class="fa-li fa fa-linkedin"></i><a href="http://uk.linkedin.com/in/charliedanderson/">/in/charliedanderson</a></li>
+        <li><i class="fa-li fa fa-graduation-cap"></i>University of Bristol, MEng in Computer Science</li>
+      </ul>
+    </header>
 
-      <nav>
-        <ol>
-          <li><a href="#article-about">About Me</a></li>
-          <li><a href="#article-ubutheatre">Website Development</a></li>
-          <li><a href="#article-nats">Summer Internship at NATS</a></li>
-          <li><a href="#article-uni">Software Development at University</a>
-            <ol>
-              <li>Image Processing: Gesture Recognition</li>
-              <li>Machine Learning: Spam Filter</li>
-              <li>Data Structures and Algorithms: Sparse Matrix Library</li>
-              <li>Databases: SQL Queries</li>
-            </ol>
-          </li>
-          <li><a href="#article-other">Other Interests<a/></li>
-        </ol>
-      </nav>
-
-      <section>
-        <h2>Contact</h2>
-        <p>I can be contacted via email at <a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></p>
-      </section>
-    </aside>
+    <!--<nav>
+      <ol>
+        <li><a href="#article-about">About Me</a></li>
+        <li><a href="#article-ubutheatre">Website Development</a></li>
+        <li><a href="#article-nats">Summer Internship at NATS</a></li>
+        <li><a href="#article-uni">Software Development at University</a>
+          <ol>
+            <li>Image Processing: Gesture Recognition</li>
+            <li>Machine Learning: Spam Filter</li>
+            <li>Data Structures and Algorithms: Sparse Matrix Library</li>
+            <li>Databases: SQL Queries</li>
+          </ol>
+        </li>
+        <li><a href="#article-other">Other Interests<a/></li>
+      </ol>
+    </nav>-->
 
     <section id="main">
       <article>
-        <h1><a id="article-about">About Me</a></h1>
-        <div class="project-info">
-          <span class="project-info-item"><strong>Name:</strong> Charlie Anderson</span>
-          <span class="project-info-item"><strong>Email:</strong> <a href="mailto:charlie.d.anderson@gmail.com">charlie.d.anderson@gmail.com</a></span>
-        </div>
+        <h1>About Me</h1>
         <p>I am a computer science student, studying for a Masters of Engineering at the University of Bristol. I am a hardworking, conscientious individual, keen on all aspects of computer science, both practical and theoretical. My excellent team working skills have been built both through working on software projects and through my work in theatre and entertainment.</p>
-        <p>In 2013, I won the "Top 10 Second Year Computer Scientist" award. I have been achieving a first class mark throughout my time at the University.</p>
+        <p>In 2013, I won the "Top 10 Second Year Computer Scientist" award, and in 2014 my project group won the "Best 3<sup>rd</sup> Year Group Project" award. I have been achieving a first class mark throughout my time at the University.</p>
       </article>
 
       <article>
-        <h1><a id="article-ubutheatre">Website Development: ubutheatre.com</a></h1>
+        <h1>YouView</h1>
+        <div class="project-info">
+          <span class="project-info-item"><strong>Date:</strong> August 2014 - Present</span>
+          <span class="project-info-item"><strong>Role:</strong> Software Engineer</span>
+          <span class="project-info-item"><strong>Language:</strong> Python/PHP</span>
+        </div>
+        <div class="project-info">
+          <span class="project-info-item"><strong>Date:</strong> June 2014 - August 2014</span>
+          <span class="project-info-item"><strong>Role:</strong> Technology Intern (web)</span>
+          <span class="project-info-item"><strong>Language:</strong> Python/PHP</span>
+        </div>
+        <p></p>
+      </article>
+
+      <article>
+        <h1>ubutheatre.com</h1>
         <div class="project-info">
           <span class="project-info-item"><strong>Date:</strong> 2012 - Present</span>
           <span class="project-info-item"><strong>Role:</strong> Lead Developer</span>
@@ -61,16 +70,17 @@
       </article>
 
       <article>
-        <h1><a id="article-nats">Summer Internship at NATS</a></h1>
+        <h1><a id="article-nats">National Air Traffic Services</a></h1>
         <div class="project-info">
           <span class="project-info-item"><strong>Date:</strong> Summer 2012</span>
           <span class="project-info-item"><strong>Role:</strong> Summer Placement Student</span>
           <span class="project-info-item"><strong>Language:</strong> C++</span>
           <p>In the summer of 2012, I completed a 3 month internship at National Air Traffic Services, the company that provides air traffic control to the majority of the UK. My task was to specify, design and build a component of their simulation software. This component simulated the operational communications system in use between controllers, and was built using the Qt toolkit and written in C++.</p>
         </div>
+      </article>
 
       <article>
-        <h1><a id="article-uni">Software Development at University</a></h1>
+        <h1>University of Bristol</h1>
         <p>Throughout my academic career I have written a variety of programs in a variety of languages. Below is a selection of some of the more interesting examples:</p>
         <h2>Image Processing: Gesture Recognition</h2>
           <div class="project-info">
@@ -136,8 +146,10 @@
             <span class="code-toggle" data-action="toggle" data-item="#code-filmsql">Show/Hide Code</span>
             <div class="collapse" id="code-filmsql"><script src="https://gist.github.com/charlieda/8322363.js"></script></div>
           </div>
+      </article>
+
       <article>
-        <h1><a id="article-other">Other Interests</a></h1>
+        <h1>Other Interests</h1>
         <p>In my spare time, I enjoy the dark side of theatre - lighting, sound and stage management. I have been actively involved in student drama at the University of Bristol since I joined, and have held the roles of both Vice President and President of the Stage Technicians' Association. 
       </article>
 
